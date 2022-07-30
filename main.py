@@ -1,13 +1,12 @@
 import tkinter as tk
 import sys
-from first_page import FirstPage
-from second_page import SecondPage
+
 
 class TemplateApp(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
         self._Canvas = None
-        self.switch_canvas('FirstPage')
+        self.switch_canvas('')
 
     def switch_canvas(self, canvas_class):
         template_canvas_class = getattr(sys.modules[__name__], canvas_class)
