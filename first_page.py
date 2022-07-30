@@ -9,7 +9,7 @@ class FirstPage(tk.Frame):
     def __init__(self, master, *args, **kwargs):
 
         tk.Frame.__init__(self, master, *args, **kwargs)
-        self.canvas = tk.Canvas(self, bg='white', width=600, height=600)
+        self.canvas = tk.Canvas(self, bg='blue', width=600, height=600)
         self.canvas.pack(fill="both", expand=False)
         master.title('first page')
         master.resizable(0,0)
